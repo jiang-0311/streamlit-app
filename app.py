@@ -16,9 +16,14 @@ import joblib
 
 
 # 加载模型
-model = joblib.load("C:\\Users\\lenovo\\毕设-20212133050\\models\\XGBoost2.pkl")  
 
-scaler = joblib.load("C:\\Users\\lenovo\\毕设-20212133050\\models\\scaler_model.pkl")  
+script_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(script_dir, 'models', 'XGBoost2.pkl')
+scaler_path = os.path.join(script_dir, 'models', 'scaler_model.pkl')
+                                                             
+
+#model = joblib.load("C:\\Users\\lenovo\\毕设-20212133050\\models\\XGBoost2.pkl")  
+#scaler = joblib.load("C:\\Users\\lenovo\\毕设-20212133050\\models\\scaler_model.kpl")                                                                   
 
 
 # In[ ]:
