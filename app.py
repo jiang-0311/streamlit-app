@@ -23,8 +23,8 @@ model_path = os.path.join(script_dir, 'models', 'XGBoost2.pkl')
 scaler_path = os.path.join(script_dir, 'models', 'scaler_model.pkl')
                                                              
 
-#model = joblib.load("C:\\Users\\lenovo\\毕设-20212133050\\models\\XGBoost2.pkl")  
-#scaler = joblib.load("C:\\Users\\lenovo\\毕设-20212133050\\models\\scaler_model.kpl")                                                                   
+model =joblib.load(model_path)  
+scaler = joblib.load(scaler_path)                                                                   
 
 
 # In[ ]:
