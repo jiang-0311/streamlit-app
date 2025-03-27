@@ -37,19 +37,19 @@ feature_names = ['Age','Gender','GLU', 'CREA', 'DBIL', 'IBIL', 'UA', 'AST', 'ALT
 # 创建表单
 with st.form("data_form"):
 
-    age = st.number_input('年龄', min_value=0, max_value=100, value=50, step=1)
+    age = st.number_input('Age', min_value=0, max_value=100, value=50, step=1)
     gender = st.selectbox("Gender (0=Female, 1=Male):", 
                           options=[0, 1], format_func=lambda x: 'Female (0)' if x == 0 else 'Male (1)')
     st.write("You selected:", "Female" if gender == 0 else "Male")
-    glu = st.number_input('GLU', min_value=0.0, max_value=30.0, value=10.0, step=0.1)
-    crea = st.number_input('CREA', min_value=0.0, max_value=200.0, value=50.0, step=0.1)
-    dbil = st.number_input('DBIL', min_value=0.0, max_value=35.0, value=10.0, step=0.1)
-    ibil = st.number_input('IBIL', min_value=0.0, max_value=60.0, value=10.0, step=0.1)
-    ua = st.number_input('UA', min_value=0.0, max_value=500.0, value=50.0, step=0.1)
-    ast = st.number_input('AST', min_value=0.0, max_value=300.0, value=50.0, step=0.1)
-    alt = st.number_input('ALT', min_value=0.0, max_value=300.0, value=50.0, step=0.1)
-    urea = st.number_input('UREA', min_value=0.0, max_value=40.0, value=10.0, step=0.1)
-    tbil = st.number_input('TBIL', min_value=0.0, max_value=90.0, value=50.0, step=0.1)
+    glu = st.number_input('GLU（mmol/L）', min_value=0.0, max_value=30.0, value=10.0, step=0.1)
+    crea = st.number_input('CREA（μmol/L）', min_value=0.0, max_value=200.0, value=50.0, step=0.1)
+    dbil = st.number_input('DBIL（μmol/L）', min_value=0.0, max_value=35.0, value=10.0, step=0.1)
+    ibil = st.number_input('IBIL（μmol/L）', min_value=0.0, max_value=60.0, value=10.0, step=0.1)
+    ua = st.number_input('UA（μmol/L)', min_value=0.0, max_value=500.0, value=50.0, step=0.1)
+    ast = st.number_input('AST（U/L）', min_value=0.0, max_value=300.0, value=50.0, step=0.1)
+    alt = st.number_input('ALT（U/L）', min_value=0.0, max_value=300.0, value=50.0, step=0.1)
+    urea = st.number_input('UREA（mmol/L）', min_value=0.0, max_value=40.0, value=10.0, step=0.1)
+    tbil = st.number_input('TBIL（μmol/L）', min_value=0.0, max_value=90.0, value=50.0, step=0.1)
     bun_scr = st.number_input('BUN/Scr', min_value=0.0, max_value=100.0, value=50.0, step=0.1)
     
     submit_button = st.form_submit_button(label='提交')
