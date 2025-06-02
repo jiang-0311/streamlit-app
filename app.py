@@ -35,14 +35,7 @@ st.markdown("""
         font-size: 16px !important;
         font-weight: 400 !important;  /* 普通字体粗细 */
     }
-    
-    /* 美化表单元素 */
-    .stNumberInput input, .stSelectbox select {
-        border-radius: 5px;
-        padding: 0.5rem;
-        border: 1px solid #ccc;
-    }
-    
+        
     .stButton button {
         background-color: #1E88E5;
         color: white;
