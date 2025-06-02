@@ -14,7 +14,43 @@ import os
 
 
 # In[3]:
-
+# 自定义 CSS - 统一标题和表单字体
+st.markdown("""
+<style>
+    /* 统一标题和表单的字体 */
+    h1, .stNumberInput, .stSelectbox, .stButton, .stText {
+        font-family: 'SimHei', sans-serif;
+    }
+    
+    /* 调整标题大小以匹配表单元素 */
+    h1 {
+        font-size: 24px !important;
+        font-weight: 500 !important;
+        color: #333 !important;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* 统一输入框和按钮的字体大小 */
+    .stNumberInput input, .stSelectbox select, .stButton button {
+        font-size: 16px !important;
+    }
+    
+    /* 美化表单元素 */
+    .stNumberInput input, .stSelectbox select {
+        border-radius: 5px;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+    }
+    
+    .stButton button {
+        background-color: #1E88E5;
+        color: white;
+        border-radius: 5px;
+        padding: 0.75rem 1.5rem;
+    }
+</style>
+""", unsafe_allow_html=True)
 
 # 加载模型
 
