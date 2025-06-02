@@ -24,7 +24,7 @@ st.markdown("""
     
     /* 标题保持加粗但调整大小 */
     h1 {
-        font-size: 28px !important;
+        font-size: 30px !important;
         font-weight: 700 !important;
         color: #333 !important;
         text-align: center;
