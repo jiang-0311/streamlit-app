@@ -14,7 +14,7 @@ import os
 
 
 # In[3]:
-# 自定义 CSS - 统一标题和表单字体
+# 自定义 CSS - 统一字体但标题加粗
 st.markdown("""
 <style>
     /* 统一标题和表单的字体 */
@@ -22,18 +22,19 @@ st.markdown("""
         font-family: 'SimHei', sans-serif;
     }
     
-    /* 调整标题大小以匹配表单元素 */
+    /* 标题保持加粗但调整大小 */
     h1 {
-        font-size: 24px !important;
-        font-weight: 500 !important;
+        font-size: 28px !important;
+        font-weight: 700 !important;
         color: #333 !important;
         text-align: center;
         margin-bottom: 1.5rem;
     }
     
-    /* 统一输入框和按钮的字体大小 */
-    .stNumberInput input, .stSelectbox select, .stButton button {
+    /* 表单元素字体大小和样式 */
+    .stNumberInput input, .stSelectbox select, .stButton button, .stText {
         font-size: 16px !important;
+        font-weight: 400 !important;  /* 普通字体粗细 */
     }
     
     /* 美化表单元素 */
