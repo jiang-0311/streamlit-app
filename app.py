@@ -14,7 +14,6 @@ import os
 
 
 # In[3]:
-# 自定义 CSS - 统一字体但标题加粗
 st.markdown("""
 <style>
     /* 统一标题和表单的字体 */
